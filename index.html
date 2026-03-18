@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>バス停→会場への道案内 | Kernel/VM探検隊＠つくば No3</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+header {
+  padding: 24px 16px 16px;
+  text-align: center;
+  border-bottom: 3px solid #0066cc;
+}
+header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #003366;
+}
+header p.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+header p.destination {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: #0066cc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+.steps {
+  padding: 8px 0 32px;
+}
+.step {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.step-badge {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #0066cc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+.step-caption {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+.step img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+.step img + img {
+  margin-top: 8px;
+}
+footer {
+  padding: 24px 16px;
+  text-align: center;
+  border-top: 3px solid #0066cc;
+  background: #f8f9fa;
+}
+footer a {
+  color: #0066cc;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>バス停→会場への道案内</h1>
+  <p class="subtitle">Kernel/VM探検隊＠つくば No3</p>
+  <p class="destination">目的地: 3A204（第三エリアA棟2階4番教室）</p>
+</header>
+
+<div class="steps">
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">1</span>
+      <span class="step-caption">第三エリア前バス停でバスを降りると景色はこんな感じ</span>
+    </div>
+    <img src="photos/010_第三エリア前バス停でバスを降りると景色はこんな感じ.jpeg" alt="第三エリア前バス停でバスを降りると景色はこんな感じ" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">2</span>
+      <span class="step-caption">最寄りの横断歩道まで歩道を歩きます</span>
+    </div>
+    <img src="photos/020_最寄りの横断歩道まで歩道を歩きます.jpeg" alt="最寄りの横断歩道まで歩道を歩きます" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">3</span>
+      <span class="step-caption">横断歩道を渡ります</span>
+    </div>
+    <img src="photos/040_横断歩道を渡ります.jpeg" alt="横断歩道を渡ります" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">4</span>
+      <span class="step-caption">横断歩道を渡ったらそのまま突き当たりまで進みます</span>
+    </div>
+    <img src="photos/050_横断歩道を渡ったらそのまま突き当たりまで進みます.jpeg" alt="横断歩道を渡ったらそのまま突き当たりまで進みます" loading="lazy">
+    <img src="photos/051_7680 Large.jpeg" alt="補助写真" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">5</span>
+      <span class="step-caption">突き当たりを<strong>右</strong>に進みます</span>
+    </div>
+    <img src="photos/070_突き当たりを右に進みます.jpeg" alt="突き当たりを右に進みます" loading="lazy">
+    <img src="photos/071_IMG_7685 Large.jpeg" alt="補助写真" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">6</span>
+      <span class="step-caption">街灯と駐輪場があります。ここを<strong>左</strong>に曲がります</span>
+    </div>
+    <img src="photos/080_街灯と駐輪場があります。ここを左に曲がります.jpeg" alt="街灯と駐輪場があります。ここを左に曲がります" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">7</span>
+      <span class="step-caption">街灯と駐輪場に沿って進みます</span>
+    </div>
+    <img src="photos/090_街灯と駐輪場に沿って進みます.jpeg" alt="街灯と駐輪場に沿って進みます" loading="lazy">
+    <img src="photos/091_IMG_7691 Large.jpeg" alt="補助写真" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">8</span>
+      <span class="step-caption">外階段の入り口があります。薄暗いですが正しい入り口です</span>
+    </div>
+    <img src="photos/100_外階段の入り口があります。薄暗いですが正しい入り口です.jpeg" alt="外階段の入り口があります。薄暗いですが正しい入り口です" loading="lazy">
+    <img src="photos/101_IMG_7693 Large.jpeg" alt="補助写真" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">9</span>
+      <span class="step-caption">2階に上がったところです</span>
+    </div>
+    <img src="photos/110_2階に上がったところです.jpeg" alt="2階に上がったところです" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">10</span>
+      <span class="step-caption">この扉から屋内に入ります</span>
+    </div>
+    <img src="photos/120_この扉から屋内に入ります.jpeg" alt="この扉から屋内に入ります" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">11</span>
+      <span class="step-caption">会場教室前の廊下です</span>
+    </div>
+    <img src="photos/130_会場教室前の廊下です.jpeg" alt="会場教室前の廊下です" loading="lazy">
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-badge">12</span>
+      <span class="step-caption">会場の教室の入り口です</span>
+    </div>
+    <img src="photos/140_会場の教室の入り口です.jpeg" alt="会場の教室の入り口です" loading="lazy">
+  </div>
+
+</div>
+
+<footer>
+  <a href="https://kernelvm.connpass.com/event/381371/">connpass イベントページ</a>
+</footer>
+
+</body>
+</html>
